@@ -1,4 +1,5 @@
 module.exports = {
+  plugins: ['@docusaurus/plugin-google-analytics'],
   title: 'stc',
   tagline: 'The faster type checker',
   url: 'https://stc.dudy.dev',
@@ -9,6 +10,9 @@ module.exports = {
   organizationName: 'stc-rs', // Usually your GitHub org/user name.
   projectName: 'stc', // Usually your repo name.
   themeConfig: {
+    googleAnalytics: {
+      trackingID: 'G-XEGVWSN58H',
+    },
     navbar: {
       title: 'STC',
       logo: {
