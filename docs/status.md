@@ -19,6 +19,21 @@ Ignored tests include
 - multi-file tests (tests with `@filename` directive)
 - tests for recursive types.
 
+
+**Note**
+
+Currently some of `type not found` errors are normalized.
+Namely, those are
+
+```ts
+// TS2552: Type not found with recommendation.
+// TS2580: Type not found with recommendation for package to instsall.
+// TS2581: Type not found with recommendation for jQuery.
+// TS2582: Type not found with recommendation for jest or mocha.
+// TS2583: Type not found with recommendation to change target library.
+// TS2584: Type not found with recommendation to change target library to include `dom`.
+```
+
 ### 2021/01/30
 
 1531 tests pass.
