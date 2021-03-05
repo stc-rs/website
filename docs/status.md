@@ -11,4 +11,56 @@ This page will be removed once the public version is released.
 
 The `conformance` tests are error reporting tests ported from official typescript repository.
 
-Status: 1882 tests pass
+**Note**: Currently many tests are ignored.
+
+Ignored tests include
+
+- tests for error recovery of the parser.
+- multi-file tests (tests with `@filename` directive)
+- tests for recursive types.
+
+### 2021/01/30
+
+1531 tests pass.
+
+### 2021/02/04
+
+1597 tests pass.
+
+### 2021/02/07
+
+1692 tests pass
+
+### 2021/02/09
+
+1730 tests pass.
+
+### 2021/02/12
+
+1740 tests pass.
+
+### 2021/02/19
+
+1748 out of 3040 tests pass.
+
+### 2021/02/21
+
+1774 out of 3059 tests pass. 1902 ignored;
+
+The ignored 1902 tests are one of:
+
+- tests for error recovery of the parser
+- tests for import / exports
+- tests for recursive types.
+
+### 2021/02/24
+
+1797 tests pass.
+
+### 2021/02/27
+
+1800 tests pass.
+
+### 2021/03/02
+
+1863 tests pass.
