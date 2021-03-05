@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ['@docusaurus/plugin-google-analytics'],
+  // plugins: ['@docusaurus/plugin-google-analytics'],
   title: 'stc',
   tagline: 'The faster type checker',
   url: 'https://stc.dudy.dev',
@@ -81,13 +81,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/stc-rs/website/edit/main/sidebars.js',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/stc-rs/website/tree/main/blog',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
