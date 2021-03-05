@@ -1,7 +1,7 @@
 module.exports = {
   // plugins: ['@docusaurus/plugin-google-analytics'],
   title: 'stc',
-  tagline: 'The faster type checker',
+  tagline: 'The fastest typescript type checker',
   url: 'https://stc.dudy.dev',
   baseUrl: '/',
   onBrokenLinks: 'throw',
