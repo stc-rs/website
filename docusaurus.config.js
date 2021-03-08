@@ -26,10 +26,19 @@ module.exports = {
           label: 'Docs',
           position: 'left',
         },
-        { to: 'blog', label: 'Blog', position: 'left' },
+        {
+          to: 'blog',
+          label: 'Blog',
+          position: 'left',
+        },
         {
           href: 'https://github.com/stc-rs/stc',
           label: 'GitHub',
+          position: 'right',
+        },
+        {
+          to: 'account',
+          label: 'Account',
           position: 'right',
         },
       ],
