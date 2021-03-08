@@ -11,15 +11,17 @@ interface Props {
 const ProtectedPage: React.FC<Props> = ({ title, children }) => {
   return (
     <Layout title={title}>
-      <BrowserOnly fallback={<div>{title}</div>}>
-        {() => {
-          return (
-            <AuthProvider>
-              <Protected>{children}</Protected>
-            </AuthProvider>
-          );
-        }}
-      </BrowserOnly>
+      <div className="container margin-vert--lg">
+        <BrowserOnly fallback={<div>{title}</div>}>
+          {() => {
+            return (
+              <AuthProvider>
+                <Protected>{children}</Protected>
+              </AuthProvider>
+            );
+          }}
+        </BrowserOnly>
+      </div>
     </Layout>
   );
 };
