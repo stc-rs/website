@@ -51,6 +51,7 @@ const LoginForm: React.FC = () => {
           fullWidth
           label={`Email`}
           {...email("email")}
+          autoComplete={"username"}
         />
         <div style={{ marginTop: 12 }} />
         <TextField
@@ -58,6 +59,7 @@ const LoginForm: React.FC = () => {
           fullWidth
           label={`Password`}
           {...password("pw")}
+          autoComplete={register ? "new-password" : "current-password"}
         />
         {register && (
           <>
@@ -68,6 +70,7 @@ const LoginForm: React.FC = () => {
               label={`Password check`}
               type="password"
               {...password("pw2")}
+              autoComplete={"new-password"}
             />
           </>
         )}
