@@ -15,39 +15,43 @@ const LoginPage: React.FC = () => {
 
   return (
     <BrowserOnly fallback={<div>Login page</div>}>
-      <Layout>
-        <AuthProvider>
-          <Grid
-            container
-            direction={"row"}
-            justify={"center"}
-            alignItems={"center"}
-            className={styles.container}
-          >
-            <Grid item xs={12} lg={3}>
-              <div>
-                <Button
-                  variant="contained"
-                  fullWidth
-                  onClick={signInWithGoogle}
-                >
-                  Sign in with google
-                </Button>
-              </div>
+      {() => {
+        return (
+          <Layout>
+            <AuthProvider>
+              <Grid
+                container
+                direction={"row"}
+                justify={"center"}
+                alignItems={"center"}
+                className={styles.container}
+              >
+                <Grid item xs={12} lg={3}>
+                  <div>
+                    <Button
+                      variant="contained"
+                      fullWidth
+                      onClick={signInWithGoogle}
+                    >
+                      Sign in with google
+                    </Button>
+                  </div>
 
-              <div style={{ marginTop: 24 }} />
+                  <div style={{ marginTop: 24 }} />
 
-              <Divider></Divider>
+                  <Divider></Divider>
 
-              <div style={{ marginTop: 36 }} />
+                  <div style={{ marginTop: 36 }} />
 
-              <LoginForm></LoginForm>
+                  <LoginForm></LoginForm>
 
-              <div style={{ marginTop: 72 }} />
-            </Grid>
-          </Grid>
-        </AuthProvider>
-      </Layout>
+                  <div style={{ marginTop: 72 }} />
+                </Grid>
+              </Grid>
+            </AuthProvider>
+          </Layout>
+        );
+      }}
     </BrowserOnly>
   );
 };

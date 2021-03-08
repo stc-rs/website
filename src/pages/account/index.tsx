@@ -8,15 +8,19 @@ import LicenseStatus from "../../components/license/Status";
 const AccountApp: React.FC = () => {
   return (
     <BrowserOnly fallback={<div>Account page</div>}>
-      <Layout>
-        <AuthProvider>
-          <div className="container margin-vert--lg">
-            <Protected>
-              <LicenseStatus></LicenseStatus>
-            </Protected>
-          </div>
-        </AuthProvider>
-      </Layout>
+      {() => {
+        return (
+          <Layout>
+            <AuthProvider>
+              <div className="container margin-vert--lg">
+                <Protected>
+                  <LicenseStatus></LicenseStatus>
+                </Protected>
+              </div>
+            </AuthProvider>
+          </Layout>
+        );
+      }}
     </BrowserOnly>
   );
 };
