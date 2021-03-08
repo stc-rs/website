@@ -75,6 +75,11 @@ export const AuthProvider: React.FC = (props) => {
   );
 };
 
+/**
+ * Get current user.
+ *
+ * @returns `undefined` while loading, `null` if it's loaded but not authenticated.
+ */
 export function useUser(): User | null | undefined {
   const v = useContext(UserContext);
   if (v.loading) return undefined;
