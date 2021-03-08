@@ -2,7 +2,9 @@ import React, { createContext, useContext, useEffect, useState } from "react";
 import firebase from "firebase/app";
 import { auth, firestore } from "../../util/firebase";
 
-export interface UserData {}
+export interface UserData {
+  licenseType?: "business" | "user";
+}
 
 export interface User {
   reload: () => void;
