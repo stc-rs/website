@@ -1,12 +1,13 @@
 import BrowserOnly from "@docusaurus/BrowserOnly";
-import React from "react";
-import firebase from "firebase/app";
-import Layout from "@theme/Layout";
-import { AuthProvider } from "../../components/auth/Authneticated";
 import { Button, Divider, Grid } from "@material-ui/core";
-import styles from "./styles.module.css";
+import Layout from "@theme/Layout";
+import firebase from "firebase/app";
+import React from "react";
+
+import { AuthProvider } from "../../components/auth/Authneticated";
 import LoginForm from "../../components/auth/LoginForm";
 import { auth } from "../../util/firebase";
+import styles from "./styles.module.css";
 
 const LoginPage: React.FC = () => {
   async function signInWithGoogle() {
@@ -17,7 +18,7 @@ const LoginPage: React.FC = () => {
     <BrowserOnly fallback={<div>Login page</div>}>
       {() => {
         return (
-          <Layout>
+          <Layout title={`Sign in`}>
             <AuthProvider>
               <Grid
                 container
