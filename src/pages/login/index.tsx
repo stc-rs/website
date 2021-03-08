@@ -9,12 +9,6 @@ import { RedirectQuery } from "../../components/util/RedirectQuery";
 import { auth } from "../../util/firebase";
 
 const LoginPage: React.FC = () => {
-  const user = useUser();
-
-  if (user) {
-    return <RedirectQuery />;
-  }
-
   async function signInWithGoogle() {
     await auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
   }

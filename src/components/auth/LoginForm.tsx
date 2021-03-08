@@ -2,6 +2,8 @@ import { Button, Grid, TextField } from "@material-ui/core";
 import React, { useState } from "react";
 import { useFormState } from "react-use-form-state";
 import { auth } from "../../util/firebase";
+import { RedirectQuery } from "../util/RedirectQuery";
+import { useUser } from "./Authneticated";
 
 interface Fields {
   email: string;
@@ -10,6 +12,12 @@ interface Fields {
 }
 
 const LoginForm: React.FC = () => {
+  const user = useUser();
+
+  if (user) {
+    return <RedirectQuery />;
+  }
+
   const [form, { email, password }] = useFormState<Fields>();
   const [register, setRegister] = useState(false);
 
