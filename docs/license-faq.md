@@ -21,4 +21,5 @@ In other words, if you are wokring on a compnay which buys the license for you, 
 If you are building a fully open source software for end-users (app, web server, website, etc..), you can use it if the license of your project is [approved by Open Source Initiative](https://opensource.org/licenses)
 
 If you are building a library for developers, you can use it under some restrictions.
-All developers using your project with a closed-source project should have the license.
+Firstly the license of your project should be [approved by Open Source Initiative](https://opensource.org/licenses).
+And all developers using your project with a closed-source project should have the license.
