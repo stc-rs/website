@@ -1,6 +1,6 @@
 import { Grid } from "@material-ui/core";
 import React from "react";
-import BuyLicnseButton from "../../../components/license/but/BuyLicenseButton";
+import BuyLicnseButton from "../../../components/license/buy/BuyLicenseButton";
 import ProtectedPage from "../../../components/util/ProtectedPage";
 
 const BuyLicensePage: React.FC = () => {

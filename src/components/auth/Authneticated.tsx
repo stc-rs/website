@@ -2,8 +2,14 @@ import React, { createContext, useContext, useEffect, useState } from "react";
 import firebase from "firebase/app";
 import { auth, firestore } from "../../util/firebase";
 
+export interface License {
+  type: "business" | "trial" | "user";
+  key: string;
+  endsAt: firebase.firestore.Timestamp;
+}
+
 export interface UserData {
-  licenseType?: "business" | "trial" | "user";
+  license?: License;
 }
 
 export interface User {

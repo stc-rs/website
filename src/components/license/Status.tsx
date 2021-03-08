@@ -10,7 +10,7 @@ const LicenseStatus: React.FC = () => {
     <div>
       <h3>Subscription status</h3>
 
-      {user.data.licenseType ? (
+      {!!user.data.license ? (
         <></>
       ) : (
         <>
