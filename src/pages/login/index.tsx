@@ -2,7 +2,7 @@ import BrowserOnly from "@docusaurus/BrowserOnly";
 import React from "react";
 import firebase from "firebase/app";
 import Layout from "@theme/Layout";
-import { AuthProvider, useUser } from "../../components/auth/Authneticated";
+import { AuthProvider } from "../../components/auth/Authneticated";
 import { Button, Divider, Grid } from "@material-ui/core";
 import styles from "./styles.module.css";
 import LoginForm from "../../components/auth/LoginForm";
