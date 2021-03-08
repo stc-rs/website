@@ -6,7 +6,7 @@ interface Props {
   method: string;
 }
 
-const BuyLicnseButton: React.FC<Props> = ({ method }) => {
+const BuyLicnseButton: React.FC<Props> = ({ method, children }) => {
   return (
     <div className={styles.container}>
       <div>
@@ -14,6 +14,7 @@ const BuyLicnseButton: React.FC<Props> = ({ method }) => {
           Via {method}
         </Grid>
       </div>
+      {children}
     </div>
   );
 };
