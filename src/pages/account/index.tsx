@@ -1,3 +1,4 @@
+import BrowserOnly from "@docusaurus/BrowserOnly";
 import Layout from "@theme/Layout";
 import React from "react";
 import { AuthProvider } from "../../components/auth/Authneticated";
@@ -6,15 +7,17 @@ import LicenseStatus from "../../components/license/Status";
 
 const AccountApp: React.FC = () => {
   return (
-    <Layout>
-      <AuthProvider>
-        <div className="container margin-vert--lg">
-          <Protected>
-            <LicenseStatus></LicenseStatus>
-          </Protected>
-        </div>
-      </AuthProvider>
-    </Layout>
+    <BrowserOnly fallback={<div>Account page</div>}>
+      <Layout>
+        <AuthProvider>
+          <div className="container margin-vert--lg">
+            <Protected>
+              <LicenseStatus></LicenseStatus>
+            </Protected>
+          </div>
+        </AuthProvider>
+      </Layout>
+    </BrowserOnly>
   );
 };
 

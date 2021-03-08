@@ -1,3 +1,4 @@
+import BrowserOnly from "@docusaurus/BrowserOnly";
 import React from "react";
 import firebase from "firebase/app";
 import Layout from "@theme/Layout";
@@ -5,7 +6,6 @@ import { AuthProvider, useUser } from "../../components/auth/Authneticated";
 import { Button, Divider, Grid } from "@material-ui/core";
 import styles from "./styles.module.css";
 import LoginForm from "../../components/auth/LoginForm";
-import { RedirectQuery } from "../../components/util/RedirectQuery";
 import { auth } from "../../util/firebase";
 
 const LoginPage: React.FC = () => {
@@ -14,35 +14,41 @@ const LoginPage: React.FC = () => {
   }
 
   return (
-    <Layout>
-      <AuthProvider>
-        <Grid
-          container
-          direction={"row"}
-          justify={"center"}
-          alignItems={"center"}
-          className={styles.container}
-        >
-          <Grid item xs={12} lg={3}>
-            <div>
-              <Button variant="contained" fullWidth onClick={signInWithGoogle}>
-                Sign in with google
-              </Button>
-            </div>
+    <BrowserOnly fallback={<div>Login page</div>}>
+      <Layout>
+        <AuthProvider>
+          <Grid
+            container
+            direction={"row"}
+            justify={"center"}
+            alignItems={"center"}
+            className={styles.container}
+          >
+            <Grid item xs={12} lg={3}>
+              <div>
+                <Button
+                  variant="contained"
+                  fullWidth
+                  onClick={signInWithGoogle}
+                >
+                  Sign in with google
+                </Button>
+              </div>
 
-            <div style={{ marginTop: 24 }} />
+              <div style={{ marginTop: 24 }} />
 
-            <Divider></Divider>
+              <Divider></Divider>
 
-            <div style={{ marginTop: 36 }} />
+              <div style={{ marginTop: 36 }} />
 
-            <LoginForm></LoginForm>
+              <LoginForm></LoginForm>
 
-            <div style={{ marginTop: 72 }} />
+              <div style={{ marginTop: 72 }} />
+            </Grid>
           </Grid>
-        </Grid>
-      </AuthProvider>
-    </Layout>
+        </AuthProvider>
+      </Layout>
+    </BrowserOnly>
   );
 };
 
