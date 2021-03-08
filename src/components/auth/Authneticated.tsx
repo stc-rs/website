@@ -3,7 +3,7 @@ import firebase from "firebase/app";
 import { auth, firestore } from "../../util/firebase";
 
 export interface UserData {
-  licenseType?: "business" | "user";
+  licenseType?: "business" | "trial" | "user";
 }
 
 export interface User {
