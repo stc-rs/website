@@ -6,7 +6,7 @@ import { AuthProvider } from "../../components/auth/Authneticated";
 import { Protected } from "../../components/auth/Protected";
 import LicenseStatus from "../../components/license/Status";
 
-const AccountApp: React.FC = () => {
+const AccountPage: React.FC = () => {
   return (
     <BrowserOnly fallback={<div>Account page</div>}>
       {() => {
@@ -26,4 +26,4 @@ const AccountApp: React.FC = () => {
   );
 };
 
-export default AccountApp;
+export default AccountPage;
