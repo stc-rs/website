@@ -19,7 +19,6 @@ Ignored tests include
 - multi-file tests (tests with `@filename` directive)
 - tests for recursive types.
 
-
 **Note**
 
 Currently some of `type not found` errors are normalized.
@@ -83,3 +82,9 @@ The ignored 1902 tests are one of:
 ### 2021/03/05
 
 1906 tests pass.
+
+### 2021/03/09
+
+1901 tests pass.
+
+(Regressed because I made the rule very strict to filter out false positives.)
