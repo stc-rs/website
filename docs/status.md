@@ -110,3 +110,9 @@ The ignored 1902 tests are one of:
 `conformance`: 1931 / 3048
 
 (Copied from typescript 4.1)
+
+### 2021/04/02
+
+`conformance`: 1953 / 3048
+
+(Copied from typescript 4.1)
