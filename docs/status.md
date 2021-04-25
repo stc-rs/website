@@ -128,3 +128,9 @@ The ignored 1902 tests are one of:
 `conformance`: 1967 / 3048
 
 (Copied from typescript 4.1)
+
+### 2021/04/25
+
+`conformance`: 1975 tests passed, but ignored some more tests because of stack overflow.
+
+(Spec: typescript 4.1)
