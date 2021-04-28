@@ -140,3 +140,9 @@ The ignored 1902 tests are one of:
 `conformance`: 1987 tests passed.
 
 (Spec: typescript 4.1)
+
+### 2021/04/28
+
+`conformance`: 2015 tests passed.
+
+(Spec: typescript 4.1)
