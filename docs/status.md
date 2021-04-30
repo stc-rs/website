@@ -21,16 +21,28 @@ Ignored tests include
 
 **Note**
 
-Currently some of `type not found` errors are normalized.
+Currently some of errors are normalized.
 Namely, those are
 
 ```ts
+// TS2304: Type not found.
 // TS2552: Type not found with recommendation.
 // TS2580: Type not found with recommendation for package to instsall.
 // TS2581: Type not found with recommendation for jQuery.
 // TS2582: Type not found with recommendation for jest or mocha.
 // TS2583: Type not found with recommendation to change target library.
 // TS2584: Type not found with recommendation to change target library to include `dom`.
+```
+
+```ts
+// TS2339: Property not found.
+// TS2550: Property not found with a suggestion to change `lib`.
+// TS2551: Property not found with a suggestion.
+```
+
+```ts
+// TS2693: Type used as a variable.
+// TS2585: Type used as a variable with a suggestion to change 'lib',
 ```
 
 ### 2021/01/30
@@ -152,3 +164,7 @@ The ignored 1902 tests are one of:
 `conformance`: 2065 tests passed.
 
 (Spec: typescript 4.1)
+
+```
+
+```
