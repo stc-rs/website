@@ -182,3 +182,9 @@ The ignored 1902 tests are one of:
 `conformance`: 2108 tests passed.
 
 (Spec: typescript 4.1)
+
+### 2021/05/03
+
+`conformance`: 2117 tests passed.
+
+(Spec: typescript 4.1)
