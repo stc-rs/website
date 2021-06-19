@@ -22,4 +22,4 @@ If you are building a fully open source software for end-users (app, web server,
 
 If you are building a library for developers, you can use it under some restrictions.
 Firstly the license of your project should be [approved by Open Source Initiative](https://opensource.org/licenses).
-And all developers using your project with a closed-source project should have the stc license.
+And all developers using your project with a close-source project should have the stc license.
