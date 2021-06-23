@@ -242,3 +242,17 @@ The ignored 1902 tests are one of:
 `conformance`: 2241 tests passed.
 
 (Spec: typescript 4.1)
+
+### 2021/06/23
+
+(Spec: typescript 4.1)
+
+Now I use better statistics.
+
+```
+Stats {
+    required_error: 4534,
+    matched_error: 5015,
+    extra_error: 1118,
+}
+```
