@@ -5,6 +5,10 @@ sidebar_label: FAQ
 slug: /license/faq
 ---
 
+## Note
+
+You are not allowed to resell or create a competitive product using stc.
+
 ## Can I use personal license at work?
 
 For non-oss projects, all core members with push access should have apppropriate license.
